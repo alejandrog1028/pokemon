@@ -2,11 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { StyleSheet, Text, View, TextInput, Image, ScrollView } from 'react-native';
 
 export default function App() {
-  const [name, setName] = useState('shuppet'); // Default Pokémon
+  const [name, setName] = useState('pikachu'); 
   const [result, setResult] = useState('');
   const [images, setImages] = useState([]);
 
-  // ✅ Replace this with YOUR computer's IP address and port 3000
   const API_URL = 'http://10.28.166.136:3000';
 
   useEffect(() => {
